@@ -1,4 +1,3 @@
-
 /*empieza docente*/
 
 
@@ -8,7 +7,7 @@
     grid-template-columns: 4, 1fr;
     grid-template-rows: 4, 1fr;
     grid-template-areas: "1 2";
-    @include border (solid, 2px,#F2EFD0 );
+    @include border (solid, 2px, #F2EFD0);
     border: solid 2px rgb(245, 245, 245);
 }
 
@@ -16,7 +15,7 @@
 
 
 h1 {
-    color:$h1-color;
+    color: $h1-color;
 }
 
 .foto-profe {
@@ -25,10 +24,11 @@ h1 {
 
 }
 
- .titulo-profe1 h2 {
+.titulo-profe1 h2 {
     text-align: start;
-    
+
 }
+
 .titulo-profe2 h2 {
     text-align: end;
 }
@@ -37,10 +37,10 @@ h1 {
 /*Docentes Media query dispositivos medianos*/
 @media screen and (max-width :$pantalla-mediana) {
 
-.docentes {
-    @include flex-column;
-    font-size: 0.50rem;
-}
+    .docentes {
+        @include flex-column;
+        font-size: 0.50rem;
+    }
 }
 
 
@@ -52,9 +52,9 @@ h1 {
 @media screen and (max-width :$pantalla-mobile) {
 
     .docentes {
-         @include flex-column;
-         
-         font-size:0.50rem ;
+        @include flex-column;
+
+        font-size: 0.50rem;
 
     }
 }

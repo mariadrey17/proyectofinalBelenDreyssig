@@ -6,134 +6,150 @@
 
 .tituloclases {
   display: block;
-  font-family:monospace;
+  font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width:22ch;
-  animation:typing 8s steps(22), blink .5s infinite step-end alternate;
+  width: 22ch;
+  animation: typing 8s steps(22), blink .5s infinite step-end alternate;
   overflow: hidden;
- }
-  
-  @keyframes typing {
-    from {width: 0}
+}
 
-  }
-  @keyframes blink{
-    50% {border-color: transparent}
-
+@keyframes typing {
+  from {
+    width: 0
   }
 
-  .titulomascursos {
-    display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:12ch;
-    animation:typing 10s steps(12), blink .3s infinite step-end alternate;
-    overflow: hidden;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
 
+}
 
-  
-  .titulodisciplinas1 {  
-    display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:22ch;
-    animation:typing 10s steps(22), blink .3s infinite step-end alternate;
-    overflow: hidden; 
-
-
-  }
-  .titulodisciplinas2{
-    display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:23ch;
-    animation:typing 10s steps(23), blink .5s infinite step-end alternate;
-    overflow: hidden;
-
-  }
-
-  .titulootroscursos {
-    display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:23ch;
-    animation:typing 14s steps(23), blink .5s infinite step-end alternate;
-    overflow: hidden;
-
-  }
-  .tituloclasesonline {
-    display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:24ch;
-    animation:typing 18s steps(24), blink .5s infinite step-end alternate;
-    overflow: hidden;
- }
-
- .tituloaranceles {
+.titulomascursos {
   display: block;
-    font-family:monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width:10ch;
-    animation:typing 22s steps(10), blink .5s infinite step-end alternate;
-    overflow: hidden;
- }
-  
- table {
-  color:#E9DFCB ;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+  animation: typing 10s steps(12), blink .3s infinite step-end alternate;
+  overflow: hidden;
+}
+
+
+
+.titulodisciplinas1 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+  animation: typing 10s steps(22), blink .3s infinite step-end alternate;
+  overflow: hidden;
+
+
+}
+
+.titulodisciplinas2 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 23ch;
+  animation: typing 10s steps(23), blink .5s infinite step-end alternate;
+  overflow: hidden;
+
+}
+
+.titulootroscursos {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 23ch;
+  animation: typing 14s steps(23), blink .5s infinite step-end alternate;
+  overflow: hidden;
+
+}
+
+.tituloclasesonline {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 24ch;
+  animation: typing 18s steps(24), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+.tituloaranceles {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 10ch;
+  animation: typing 22s steps(10), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+table {
+  color: #E9DFCB;
 }
 
 
 #lista-desordenada {
-  color:#FBFAFF ;
+  color: #FBFAFF;
   margin-bottom: 100px;
   font-weight: bold;
 }
 
 ol {
-  color:#FBFAFF ;
+  color: #FBFAFF;
 }
 
 .container-table-1 {
-  border: solid 1px #E9DFCB ;
+  border: solid 1px #E9DFCB;
   @include sizes (622px, 1282px);
-  background-image: linear-gradient(to right,#3D4045 ,#E6678E );
-  animation:movimiento 5s linear infinite alternate;
-  background-size: 200% , 200%;
+  background-image: linear-gradient(to right, #3D4045, #E6678E);
+  animation: movimiento 5s linear infinite alternate;
+  background-size: 200%, 200%;
   position: relative;
 
-@keyframes movimiento{
-  from  { background-position: 0,0;
+  @keyframes movimiento {
+    from {
+      background-position: 0, 0;
+    }
+
+    to {
+      background-position: 100%, 100%;
+    }
   }
- to  {background-position:100%,100%; }
-}
 }
 
 .container-table {
-  border: solid 1px #E9DFCB ;
+  border: solid 1px #E9DFCB;
   @include sizes (622px, 1282px);
 
 }
 
 .container-table {
-  background-image: linear-gradient(to right,#3D4045 ,#E6678E );
-  animation:movimiento 5s linear infinite alternate;
-  background-size: 200% , 200%;
+  background-image: linear-gradient(to right, #3D4045, #E6678E);
+  animation: movimiento 5s linear infinite alternate;
+  background-size: 200%, 200%;
   position: relative;
 
-@keyframes movimiento{
-  from  { background-position: 0,0;
+  @keyframes movimiento {
+    from {
+      background-position: 0, 0;
+    }
+
+    to {
+      background-position: 100%, 100%;
+    }
   }
- to  {background-position:100%,100%; }
-} }
+}
 
 
 
@@ -148,50 +164,47 @@ ol {
 
 
 /*Clases para dispositivos medianos*/
-@media screen and (max-width :$pantalla-mediana) 
-{ 
+@media screen and (max-width :$pantalla-mediana) {
   .tablachica {
     width: 516px;
   }
-  
+
 }
 
 /*clases para media query pequeños*/
 
 @media screen and (max-width:$pantalla-mobile) {
 
- 
-  
+
+
 
   .tablachica {
-    width:340px;
+    width: 340px;
   }
- 
+
   .container-table-1 {
-    @include sizes ( 20rem,68rem);
-   
+    @include sizes (20rem, 68rem);
+
   }
+
   .container-table {
-    border: solid 1px #E9DFCB; ;
+    border: solid 1px #E9DFCB;
+    ;
 
     @include sizes (20rem, 84rem);
   }
 
 
-  
-   
-  
-    .titulodisciplinas {  
-      font-size: 1rem;
-    }
-  
-    .tituloclasesonline {
-      font-size: 1rem;
-   }
- 
+
+
+
+  .titulodisciplinas {
+    font-size: 1rem;
+  }
+
+  .tituloclasesonline {
+    font-size: 1rem;
+  }
+
 
 }
-  
-  
-  
-  

@@ -50,12 +50,12 @@ h3 {
 
 .video-escuela {
   @include sizes (100%, 735px);
-  
-
- }
 
 
- .info-escuela {
+}
+
+
+.info-escuela {
   text-align: center;
 }
 
@@ -65,37 +65,46 @@ h3 {
   @include border(solid, 2px, rgb(245, 245, 245));
 }
 
-.item1{
+.item1 {
   .establecimiento {
-  @include sizes (400px, 400px)
-}
+    @include sizes (400px, 400px)
+  }
 }
 
 .item2 {
   background-image: $bg-item;
-  animation:movimiento 4s linear infinite alternate;
-  background-size: 200% , 200%;
+  animation: movimiento 4s linear infinite alternate;
+  background-size: 200%, 200%;
   position: relative;
 
-@keyframes movimiento{
-  from  { background-position: 0,0;
+  @keyframes movimiento {
+    from {
+      background-position: 0, 0;
+    }
+
+    to {
+      background-position: 100%, 100%;
+    }
   }
- to  {background-position:100%,100%; }
-}
 }
 
 .item3 {
   background-image: $bg-item;
-  animation:movimiento 4s linear infinite alternate;
-  background-size: 200% , 200%;
+  animation: movimiento 4s linear infinite alternate;
+  background-size: 200%, 200%;
   position: relative;
 
-@keyframes movimiento{
-  from  { background-position: 0,0;
+  @keyframes movimiento {
+    from {
+      background-position: 0, 0;
+    }
+
+    to {
+      background-position: 100%, 100%;
+    }
   }
- to  {background-position:100%,100%; }
 }
-}
+
 .linkredes {
   color: #DBE5F7;
   text-decoration: none;
@@ -103,43 +112,42 @@ h3 {
 
 .d-block {
   @include flex-column;
-align-items: center;
-color: #DBE5F7;
+  align-items: center;
+  color: #DBE5F7;
 }
+
 .redes {
   @include flex-column;
   align-items: center;
-    
+
   text-align: center;
-  margin-bottom:3rem ;
+  margin-bottom: 3rem;
 }
 
 
 
 
 
- /*Index dispositivos medianos*/
-  
- .nav-toggler {
-  color: #F05677 ;
- }
+/*Index dispositivos medianos*/
 
-@media screen and (max-width:$pantalla-mediana) 
-{
-.video-escuela {
-
-height:437px;
+.nav-toggler {
+  color: #F05677;
 }
 
-}  
+@media screen and (max-width:$pantalla-mediana) {
+  .video-escuela {
+
+    height: 437px;
+  }
+
+}
 
 /*Index dispositivos pequeños*/
 
-@media screen and (max-width:$pantalla-mobile) 
-{
-.video-escuela {
-  
-  height:282px;
+@media screen and (max-width:$pantalla-mobile) {
+  .video-escuela {
+
+    height: 282px;
   }
- 
-}  
+
+}
