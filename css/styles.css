@@ -48,13 +48,12 @@ h6 {
     background-image: url(../img/imagen\ mediana.jpg);
   }
   .navbar-toggler {
-    color: #DBE5F7;
-    border: solid 2px #DBE5F7;
-    border-color: solid 2px #DBE5F7;
+    color: #F05677;
+    border: solid 6px #4FEB76;
+    box-shadow: 0px 4px 10px #4FEB76;
   }
   .navbar-toggler-icon {
-    background-color: #DBE5F7;
-    border-color: solid 2px #DBE5F7;
+    background-color: #F05677;
   }
 }
 /*media query dispositivos pequeños*/
@@ -219,7 +218,7 @@ h3 {
 
 /*Index dispositivos medianos*/
 .nav-toggler {
-  color: aliceblue;
+  color: #F05677;
 }
 
 @media screen and (max-width: 768px) {
