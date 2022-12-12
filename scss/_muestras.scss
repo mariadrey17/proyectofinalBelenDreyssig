@@ -1,155 +1,166 @@
 /*acá empieza Muestras */
 
 .grilla {
-    display: grid;
-  
-  }
-  
-  
-  .Item4 {
-    
-    grid-template-columns:3 , 1fr ;
-    grid-template-rows: 2 , 1fr;
-    grid-template-areas: 
-    "card-foto 1  card_foto 2" 
-    "card-foto 3   card_foto 4    card-foto 5";
-    
-  }
+  display: grid;
 
-  
-  
-  
-  .Item5 {
-    display: flex;
-    justify-content: center;
-    background-image:linear-gradient( to bottom right, grey 10% ,#545454,#EBB6BA , rgb(226, 96, 117)) ;
-    animation:movimiento 5s linear infinite alternate;
-    background-size: 200% , 200%;
-    position: relative;
-    box-shadow: 0px 2px 10px #F4B2BA ;
-    cursor:default;
-    transition: all 400ms ease;
-  
-  @keyframes movimiento{
-    from  { background-position: 0,0;
+}
+
+
+.Item4 {
+
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas:
+    "card-foto 1  card_foto 2"
+    "card-foto 3   card_foto 4    card-foto 5";
+
+}
+
+
+
+
+.Item5 {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, grey 10%, #545454, #EBB6BA, rgb(226, 96, 117));
+  animation: movimiento 5s linear infinite alternate;
+  background-size: 200%, 200%;
+  position: relative;
+  box-shadow: 0px 2px 10px #F4B2BA;
+  cursor: default;
+  transition: all 400ms ease;
+
+  @keyframes movimiento {
+    from {
+      background-position: 0, 0;
     }
-   to  {background-position:100%,100%; }
-  } }
-  
-    /*puedo hacer algo con grid en galeria*/
+
+    to {
+      background-position: 100%, 100%;
+    }
+  }
+}
+
+/*puedo hacer algo con grid en galeria*/
+.galeria {
+
+
+  @include flex-column;
+
+
+  width: 536px;
+  height: 363px;
+}
+
+.h2tienda {
+  margin-right: 5rem;
+}
+
+h6.card_parrafo--grande {
+  color: #DBE5F7;
+  font-size: 1.5rem;
+
+}
+
+.caja-tienda {
+  @include sizes (441px, 1640px);
+  margin-bottom: 4rem;
+
+}
+
+.list-group-flush {
+  box-shadow: 0px 2px 10px #F4B2BA;
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.list-group-flush :hover {
+  box-shadow: 5px 5px 20px #F4B2BA;
+  transform: translateY(-1%);
+}
+
+.list-group-item {
+  background-image: linear-gradient(to bottom right, grey 10%, #545454, #EBB6BA);
+  @extend.botones-generales;
+  height: 459px;
+
+}
+
+/* media querie para dispositivos moviles medianos muestras*/
+
+@media screen and (max-width :$pantalla-mediana) {
   .galeria {
 
-    
-    @include flex-column;
-  
-  
-    width: 536px;
-    height: 363px;
-  }
-    
-  .h2tienda {
-    margin-right:5rem ;
-  }
-  h6.card_parrafo--grande {
-    color: #DBE5F7;
-    font-size: 1.5rem;
-    
+    width: 348px;
+
+
   }
 
   .caja-tienda {
-    @include sizes (441px,1640px );
-    margin-bottom: 4rem;
+    @include sizes (441px, 1556px);
+
+  }
+
+  .list-group-item {
+
+    height: 431px;
+
+
+
+  }
+}
+
+
+
+
+/*media querie para dispositivos pequeños muestras  */
+
+/*tienda*/
+@media screen and (max-width: $pantalla-mobile) {
+
+  .h2tienda {
+    margin-right: 1rem;
+  }
+
+  .tienda {
+
+    @include sizes (318px, 2000px);
+
+    margin-top: 10px;
+
+  }
+
+
+
+  .caja-tienda {
+    @include sizes (318px, 95px);
 
   }
 
   .list-group-flush {
-    box-shadow: 0px 2px 10px #F4B2BA ;
-    cursor:default;
-    transition: all 400ms ease;
+    height: 1000px;
   }
- .list-group-flush :hover {
-  box-shadow: 5px 5px 20px  #F4B2BA ;
-  transform: translateY(-1%);
- }
 
   .list-group-item {
-    background-image: linear-gradient( to bottom right, grey 10% ,#545454,#EBB6BA);
-    @extend.botones-generales;
-    height: 459px;
-  
+    height: 469px;
   }
-  
-  /* media querie para dispositivos moviles medianos muestras*/
-  
-  @media screen and (max-width :$pantalla-mediana) {
-    .galeria {
-  
-      width: 348px;
-  
-  
-    }
-    .caja-tienda {
-      @include sizes (441px,1556px );
-  
-    }
-    .list-group-item {
-     
-      height: 431px;
-  
- 
-  
-  }
-  }
-  
-  
-  
-  
-  /*media querie para dispositivos pequeños muestras  */
-  
-  /*tienda*/
-  @media screen and (max-width: $pantalla-mobile) {
-  
-    .h2tienda {
-      margin-right:1rem ;
-    }
-  
-    .tienda {
 
-      @include sizes (318px, 2000px);
-  
-      margin-top: 10px;
-  
-    }
-    
-  
-  
-    .caja-tienda {
-      @include sizes (318px, 95px);
-  
-    }
- 
-    .list-group-flush{
-      height: 1000px ;
-    }
-    .list-group-item {
-      height: 469px;
-    }
-    .Item5 {
-      width:24rem ;
-      height:107rem;
-      }
-   
-    .galeria {
-      width: 105px;
-      height: 106px;
-  
-  
-    }
-  
-  
-    .card-foto {
-      width: 50px;
-      height: 50px;
-    }
-  
+  .Item5 {
+    width: 24rem;
+    height: 107rem;
   }
+
+  .galeria {
+    width: 105px;
+    height: 106px;
+
+
+  }
+
+
+  .card-foto {
+    width: 50px;
+    height: 50px;
+  }
+
+}
