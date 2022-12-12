@@ -571,6 +571,12 @@ h6.card_parrafo--grande {
   width: 100%;
 }
 
+.imagen-contacto {
+  width: 3rem;
+  height: 3rem;
+  background-color: #DBE5F7;
+}
+
 .caja-mala {
   border: solid 0.2rem #F4B2BA;
   padding: 4rem;
