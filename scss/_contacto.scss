@@ -1,0 +1,228 @@
+/*Acá empieza contactos*/
+
+
+
+.carousel-slide {
+  animation-duration:1s ;
+}
+.carousel-inner {
+    width: 100%;
+  
+  }
+
+  
+  
+  .caja-mala {
+    @include border (solid, 0.20rem,#F4B2BA);
+  
+    padding: 4rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 1rem;
+    height: 1rem;
+    font-family: arial;
+    overflow: visible;
+    background-image:linear-gradient(#5E646B, #F05677);
+  }
+  
+  .card {
+    @include border (solid, 1rem,#F4B2BA );
+    
+     
+      background-color:#E69867 ;
+      width:calc($separacion + 10rem) ;
+      padding:calc($separacion - 8rem);
+      position:relative;
+       
+    
+  
+    position: relative;
+  
+  }
+  
+  .caja-flex {
+    display: flex;
+    box-shadow: 0px 2px 10px#F4B2BA  ;
+    cursor:default;
+    transition: all 400ms ease;
+  }
+  .caja-flex :hover {
+    box-shadow: 5px 5px 20px #F4B2BA;
+    transform: translateY(-3%);
+   }
+  
+  .adulg {
+    @include border (solid, 1rem, #F4B2BA);
+  
+    width: 20rem;
+    padding: 2rem;
+    position: relative;
+  
+  }
+  
+  
+  
+  div {
+  
+    margin-top: 50px;
+    color:$p-color ;
+    font-weight: bolder;
+  }
+  
+  
+  .card_parrafo {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: $bg-body;
+  
+  }
+  
+  .card_parrafo--grande {
+    color:$bg-body;
+  }
+  
+  
+  .card_image {
+  
+    @include sizes (20rem, 20rem);
+  
+  }
+  
+  .boton {
+    @extend.botones-generales
+  }
+  
+  .mapa {
+    margin-top: 2rem;
+  
+  }
+  
+  
+ .footer {
+  color:$p-color;
+ }
+  
+  
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+
+  #escribe-formulario {
+    text-align: center;
+  }
+  
+  
+  .contenedor-opciones {
+    @include flex-column;
+    align-items: center;
+  }
+  
+  .contenedor-labels {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .boton-comunicacion {
+    background-color:#CC4991 ;
+    color: #DBE5F7;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+  
+  
+  
+  .comunicacion  {
+    display: block;
+    font-family:monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width:10ch;
+    animation:typing 22s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+   }
+    
+    @keyframes typing {
+      from {width: 0}
+  
+    }
+    @keyframes blink{
+      50% {border-color: transparent}
+  
+    }
+  
+  
+  
+  /* media querie para dispositivos moviles medianos contacto*/
+  
+  
+  
+  @media screen and (max-width:$pantalla-mediana) {
+    .caja-flex {
+      display: grid;
+      grid-template-columns: 4, 1fr;
+      grid-template-rows: 2, 1fr;
+      grid-template-areas:
+        "card1 card2"
+        "card 3 card 4";
+    }
+  
+    .card {
+  
+      width: 346px;
+  
+    }
+  
+    .card_image {
+      @include sizes (11rem, 12rem);
+  
+    }
+  
+  }
+  
+  .card {
+  
+    @include sizes (274px, 500px);
+  
+  
+  
+  }
+  
+  .card_image {
+    height: 150px;
+  }
+  
+  
+  
+  /*media querie para dispositivos pequeños contacto */
+  
+  @media screen and (max-width:$pantalla-mobile) {
+   
+  
+    .caja-flex {
+      @include flex-column;
+    }
+  
+    .card {
+  
+      @include sizes (20rem, 33rem);
+  
+      padding: 2rem;
+  
+  
+    }
+  
+    .card_image {
+      @include sizes (400px, 283px);
+    }
+  }
+  
+  .mapa {
+    width: 352px;
+  }

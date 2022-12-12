@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0,
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    @if $fiesta==pascuas {
+        background-color: gold;
+
+    }
+
+    @else if $fiesta==padre {
+        background-color: blue;
+    }
+
+    @else if $fiesta==navidad {
+        background-image: linear-gradient(to left, rgb(121, 8, 8), rgb(3, 32, 3));
+    }
+
+    @else {
+        background-color:$bg-body;
+
+    }
+}
+
+
+
+footer {
+    color: $p-color
+}
+
+
+
+
+

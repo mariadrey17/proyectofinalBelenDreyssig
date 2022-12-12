@@ -1,0 +1,38 @@
+$bg-body:#5E646B;;
+$bg-header:url(../images/fondo.jpg);
+$titulos-secundarios: "Roboto",
+sans-serif;
+
+$h1-color:#F7F4D5;
+$h2-color:#F2CBD0;
+$h3-color:#F2EFD0;
+$p-color:rgb(230, 230, 174);
+$pantalla-mobile:460px;
+$pantalla-mediana:768px;
+$pantala-grande:auto;
+$bg-item:linear-gradient(to left,#CCCCEB,#EBB6BA , #F05677);
+
+/*mixin*/
+
+@mixin flex-column {
+
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin border ($solid, $size, $color) {
+   border: solid $size $color;
+}
+
+/*mixin sizes*/
+@mixin sizes ($width, $height) {
+   width: $width;
+   height: $height;
+
+}
+/*condicional*/
+$fiesta:$bg-body;
+
+
+/*separacion operaciones*/
+$separacion:10rem;

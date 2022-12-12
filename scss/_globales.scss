@@ -1,0 +1,82 @@
+/*extends*/
+.botones-generales {
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+
+}
+
+p { 
+    color: #DBE5F7;
+
+    font-size:1.5rem;
+}
+
+h5 {
+    color: #DBE5F7;
+}
+
+h6 {
+    color: #DBE5F7;
+}
+.style {
+    background-image: url(../img/Diseño\ sin\ título.jpg);
+}
+
+.nav-item a {
+    font-size:2rem;
+    color:#DBE5F7;
+    border:solid 2px white ;
+    background-color:black ;
+}
+.nav-item :hover{
+            
+    color: #F05677 ;
+    animation-duration:4s ;
+    
+}
+
+.data-aos {
+    animation-duration: 22s; 
+   }
+
+
+ /*media query dispositivos medianos*/
+ @media  screen  and (max-width:$pantalla-mediana) {
+    .style {
+        background-image: url(../img/imagen\ mediana.jpg);
+    }
+   
+        
+    .navbar-toggler {
+
+         color: #DBE5F7 ;
+        border: solid 2px #DBE5F7 ;
+        border-color:solid 2px  #DBE5F7;
+      }
+      .navbar-toggler-icon{
+        background-color: #DBE5F7 ;
+        border-color:solid 2px  #DBE5F7;
+      }
+    }
+
+
+  
+ 
+
+
+ /*media query dispositivos pequeños*/
+ @media  screen  and (max-width:$pantalla-mobile) {
+ .style {
+    background-image: url(../img/imagenchica.jpg);
+}
+
+  
+.navbar-toggler-icon{
+    color:#DBE5F7;
+}
+button.collapse navbar-collapse {
+    color:#DBE5F7;
+}
+
+}
