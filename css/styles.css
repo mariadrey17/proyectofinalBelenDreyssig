@@ -35,11 +35,13 @@ h6 {
 
 .nav-item :hover {
   color: #F05677;
-  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .data-aos {
-  animation-duration: 22s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
 }
 
 /*media query dispositivos medianos*/
@@ -106,7 +108,8 @@ header {
 }
 
 .data-aos {
-  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 
 .nav-item {
@@ -134,9 +137,12 @@ h1 {
 }
 
 h1 {
-  animation-duration: 4s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 h2 {
@@ -146,6 +152,15 @@ h2 {
 
 h3 {
   color: #F2EFD0;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes aparecer {
@@ -176,9 +191,18 @@ h3 {
 
 .item2 {
   background-image: linear-gradient(to left, #CCCCEB, #EBB6BA, #F05677);
-  animation: movimiento 4s linear infinite alternate;
+  -webkit-animation: movimiento 4s linear infinite alternate;
+          animation: movimiento 4s linear infinite alternate;
   background-size: 200%, 200%;
   position: relative;
+}
+@-webkit-keyframes movimiento {
+  from {
+    background-position: 0, 0;
+  }
+  to {
+    background-position: 100%, 100%;
+  }
 }
 @keyframes movimiento {
   from {
@@ -191,7 +215,8 @@ h3 {
 
 .item3 {
   background-image: linear-gradient(to left, #CCCCEB, #EBB6BA, #F05677);
-  animation: movimiento 4s linear infinite alternate;
+  -webkit-animation: movimiento 4s linear infinite alternate;
+          animation: movimiento 4s linear infinite alternate;
   background-size: 200%, 200%;
   position: relative;
 }
@@ -294,13 +319,25 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 22ch;
-  animation: typing 8s steps(22), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 8s steps(22), blink 0.5s infinite step-end alternate;
+          animation: typing 8s steps(22), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 @keyframes typing {
   from {
     width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 @keyframes blink {
@@ -314,7 +351,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 12ch;
-  animation: typing 10s steps(12), blink 0.3s infinite step-end alternate;
+  -webkit-animation: typing 10s steps(12), blink 0.3s infinite step-end alternate;
+          animation: typing 10s steps(12), blink 0.3s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -324,7 +362,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 22ch;
-  animation: typing 10s steps(22), blink 0.3s infinite step-end alternate;
+  -webkit-animation: typing 10s steps(22), blink 0.3s infinite step-end alternate;
+          animation: typing 10s steps(22), blink 0.3s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -334,7 +373,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 23ch;
-  animation: typing 10s steps(23), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 10s steps(23), blink 0.5s infinite step-end alternate;
+          animation: typing 10s steps(23), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -344,7 +384,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 23ch;
-  animation: typing 14s steps(23), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 14s steps(23), blink 0.5s infinite step-end alternate;
+          animation: typing 14s steps(23), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -354,7 +395,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 24ch;
-  animation: typing 18s steps(24), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 18s steps(24), blink 0.5s infinite step-end alternate;
+          animation: typing 18s steps(24), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -364,7 +406,8 @@ h1 {
   white-space: nowrap;
   border-right: 4px solid;
   width: 10ch;
-  animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
+          animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -387,7 +430,8 @@ ol {
   width: 622px;
   height: 1282px;
   background-image: linear-gradient(to right, #3D4045, #E6678E);
-  animation: movimiento 5s linear infinite alternate;
+  -webkit-animation: movimiento 5s linear infinite alternate;
+          animation: movimiento 5s linear infinite alternate;
   background-size: 200%, 200%;
   position: relative;
 }
@@ -408,7 +452,8 @@ ol {
 
 .container-table {
   background-image: linear-gradient(to right, #3D4045, #E6678E);
-  animation: movimiento 5s linear infinite alternate;
+  -webkit-animation: movimiento 5s linear infinite alternate;
+          animation: movimiento 5s linear infinite alternate;
   background-size: 200%, 200%;
   position: relative;
 }
@@ -467,7 +512,8 @@ ol {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to bottom right, grey 10%, #545454, #EBB6BA, rgb(226, 96, 117));
-  animation: movimiento 5s linear infinite alternate;
+  -webkit-animation: movimiento 5s linear infinite alternate;
+          animation: movimiento 5s linear infinite alternate;
   background-size: 200%, 200%;
   position: relative;
   box-shadow: 0px 2px 10px #F4B2BA;
@@ -571,7 +617,8 @@ h6.card_parrafo--grande {
 }
 /*Acá empieza contactos*/
 .carousel-slide {
-  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .carousel-inner {
@@ -690,7 +737,8 @@ form {
   white-space: nowrap;
   border-right: 4px solid;
   width: 10ch;
-  animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
+  -webkit-animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
+          animation: typing 22s steps(10), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -747,6 +795,4 @@ form {
 }
 .mapa {
   width: 352px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
