@@ -1,40 +1,82 @@
+header {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-    header {
-        background-image:url(../img/fondo.jpg) ;
-        background-size: cover;
-        background-attachment:fixed;
-        background-repeat:no-repeat ;
-        
-        @if $fiesta==pascuas {
-            background-image: url(../img/pascuas.jpg);
-    
-        }
-        
-            @else if $fiesta==padre {
-                background-image: url(../img/fatherday.jpg);
-                height: 50rem;
-            }@else if $fiesta==navidad{
-                background-image:url(../img/navidad.webp);
-                height: 50rem;}
-            @else  {
-           background-image: url(../img/fondo.jpg);
-            }
-            }
-        
-          .nav-item :hover{
-            
-                color: #F05677 ;
-                
-          }
-            .data-aos {
-                animation-duration: 10s; 
-               }
+    @if $fiesta==pascuas {
+        background-image: url(../img/pascuas.jpg);
 
-        .nav-item {
-            font-size:2rem;
-        }
+    }
 
-        p {
-            font-size:1.5rem;
-        }
-            
+    @else if $fiesta==padre {
+        background-image: url(../img/fatherday.jpg);
+        height: 50rem;
+    }
+
+    @else if $fiesta==navidad {
+        background-image: url(../img/navidad.webp);
+        height: 50rem;
+    }
+
+    @else {
+        background-image: url(../img/fondo.jpg);
+    }
+}
+
+.nav-item :hover {
+
+    color: #F05677;
+
+}
+
+.data-aos {
+    animation-duration: 10s;
+}
+
+.nav-item {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.buscar {
+    position: absolute;
+    padding: 5px;
+    margin-top: -14px;
+}
+
+.buscar input {
+    @include sizes(200px, 40px);
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FC7EA8;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #DBE5F7;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -3px;
+
+}
+audio {
+    margin-top: 40px;
+}
+
+img.lupa {
+    margin-top: -11px;
+}
